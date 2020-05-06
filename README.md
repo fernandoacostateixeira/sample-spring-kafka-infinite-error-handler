@@ -2,7 +2,7 @@
 Objetivo deste projeto é demonstrar uma configuração de retentativa de consumo de mensagens que não viola os limites de session e max poll do broker. 
 
 ### Documentation Notes
-O trecho abaixo da documentação do Spring Kafka explica as consequências de usar o BackOffPolicy como poítica de retentativa
+O trecho abaixo da documentação do Spring Kafka explica as consequências de usar o BackOffPolicy como política de retentativa
 ![Kafka Session and max poll violations](spring-documentation-broker-issue.png)
 
 O trecho abaixo da documentação do Spring explica como resolver o problema acima usando a feature Stateful Retry
