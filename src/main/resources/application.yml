@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sample-spring-kafka-consumer-error-handler
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/${spring.application.name}
+  kafka:
+    consumer:
+      group-id: sample-consumer-group
+    listener:
+      missing-topics-fatal: false
+      concurrency: 1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
